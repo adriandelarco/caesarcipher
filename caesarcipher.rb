@@ -1,16 +1,19 @@
-def solve_cipher(input)
+def solve_cipher(input,shift)
 
 	for element in input.split ('')
 	  if element == "a"
-	  	puts "z"
+	  	  print "z"
+	  elsif element == " "
+	  	  print " "
 	  else
-		  result = (element.ord - 1).chr
-		  puts result
+		  result = (element.ord + shift).chr
+		  print result
 	  end
 	end
-
+    puts "" #Salto de línea
 
 end
 
-solve_cipher("ifmmp")
+solve_cipher("p| uhdo qdph lv grqdog gxfn", -3)
+
 # should return "hello"
