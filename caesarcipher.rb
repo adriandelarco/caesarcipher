@@ -1,4 +1,4 @@
-def solve_cipher(input,shift)
+def solve_cipher(input,shift=-3)
 
 	for element in input.split ('')
 	  if element == "a"
